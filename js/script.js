@@ -14,7 +14,8 @@ for (let i = 1; i <= 100; i++) {
     newSquare.innerHTML = `<span class="m-auto"> ${i} </span>`;
     // Add click
     newSquare.addEventListener('click', function(){
-        alert('Hai cliccato lo square');
+        console.log('Hai cliccato la casella ' + i);
+        newSquare.classList.toggle('active');
     })
     gridContainer.appendChild(newSquare);
 }
