@@ -9,6 +9,8 @@ const gridContainer = document.querySelector('div.grid');
 for (let i = 1; i <= 100; i++) {
     const newSquare = document.createElement('div');
     // Aggiunta classe ai div creati
-    newSquare.classList.add('square');
+    newSquare.classList.add('square', 'd-flex');
+    // Aggiunta numeri interi square
+    newSquare.innerHTML = `<span class="m-auto"> ${i} </span>`;
     gridContainer.appendChild(newSquare);
 }
