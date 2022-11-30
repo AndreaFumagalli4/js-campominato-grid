@@ -12,5 +12,9 @@ for (let i = 1; i <= 100; i++) {
     newSquare.classList.add('square', 'd-flex');
     // Aggiunta numeri interi square
     newSquare.innerHTML = `<span class="m-auto"> ${i} </span>`;
+    // Add click
+    newSquare.addEventListener('click', function(){
+        alert('Hai cliccato lo square');
+    })
     gridContainer.appendChild(newSquare);
 }
